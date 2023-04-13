@@ -1,0 +1,125 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #191a21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.notifications{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    max-width: 470px;
+    transform: translateX(-50%);
+}
+
+.notification{
+    background: linear-gradient(90deg, #02244b 0%, #232631 40%);
+    padding: 1em;
+    border-radius: 10px;
+    color: #898c97;
+    width: 100%;
+    animation: fadeOut 0.4s ease-out 3s;
+}
+
+.notification, .notification > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+}
+
+.notification span{
+    font-size: 1.7em;
+}
+
+.close-btn{
+    cursor: pointer;
+}
+
+.notification h3{
+    color: #fff;
+    margin-bottom: 0.2em;
+}
+
+.icon{
+    width: 1.5em;
+    height: 1.5em;
+    color: #218afa;
+    background: #042c5c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.success{
+    background: linear-gradient(90deg, #084431 0%, #232631 40%);
+}
+
+.success .icon{
+    color: #26f2b1;
+    background: #0a4f3a;
+}
+
+.danger{
+    background: linear-gradient(90deg, #480607 0%, #232631 40%);
+}
+
+.danger .icon{
+    color: #ff5c5a;
+    background: #590e0e;
+}
+
+.btn{
+    border: none;
+    font-size: 1.2em;
+    padding: 0.5em 1.5em;
+    margin: 1.5em;
+    background: #218afa;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn2{
+    background: #15b555;
+}
+
+.btn3{
+    background: #ff2e2a;
+}
+
+.btn1:hover{
+    background: #1f7adc;
+}
+
+.btn2:hover{
+    background: #139948;
+}
+
+.btn3:hover{
+    background: #df2724;
+}
+
+@keyframes fadeOut{
+    100%{
+        opacity: 0;
+    }
+}
